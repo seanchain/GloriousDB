@@ -31,16 +31,18 @@ class GloriousDB{
         $this->db->close();
     }
 
-    private function _execute($query){
+    private function _execute($query, $columns="*"){
         $res = $this->_query($query);
-        $columns = $this->getColumnNames($this->table);
+        if ($columns == "*")
+            $columns = $this->getColumnNames($this->table);
         $ret = array();
         for ($i = 0; $i < $res->num_rows; $i ++){
             $row = $res->fetch_assoc();
             $temp_ret = array();
             for($j = 0; $j < count($columns); $j ++) {
                 $column = $columns[$j];
-                $temp_ret[$column] = $row[$column];
+                if($row[$column] != null)
+                    $temp_ret[$column] = $row[$column];
             }
             array_push($ret, $temp_ret);
         }
@@ -118,16 +120,17 @@ class GloriousDB{
         $this->table = $table;
     }
 
+    /*只提供了query方法，没有其他任何的封装*/
     public function sql($query)
     {
-        return $this->_execute($query);
+        return $this->_query($query);
     }
-
-    public function find()
+    /*查找对应的列*/
+    public function find($columns="*")
     {
         $length = count($this->find_q);
         $q = "select * from $this->table where ".substr($this->find_q, 4).";";
-        $ret = $this->_execute($q);
+        $ret = $this->_execute($q, $columns);
         $this->find_q = "";
         return $ret;
     }
@@ -135,23 +138,41 @@ class GloriousDB{
     private function _query($sql){
         return $this->db->query($sql);
     }
+
+    public function insert($ary){
+        $sqlA = '';
+        foreach($ary as $k=>$v){
+            $sqlA .= "`$k` = '$v',";
+        }
+
+        $sqlA = substr($sqlA, 0, strlen($sqlA)-1);
+        $sql  = "insert into $this->table set $sqlA";
+        $this->_query($sql);
+    }
+
+    public function update($update, $cond){
+        $sqlA = "";
+        foreach($update as $k=>$v){
+            $sqlA .= "$k = '$v', ";
+        }
+        $key = array_keys($cond)[0];
+        $val = array_values($cond)[0];
+        $sqlB = "$key = '$val'";
+
+        $sqlA = substr($sqlA, 0, strlen($sqlA)-2);
+        $sql = "update $this->table set $sqlA where $sqlB;";
+        echo $sql;
+        return $this->_query($sql);
+    }
+
+    public function delete($cond){
+        $key = array_keys($cond)[0];
+        $val = array_values($cond)[0];
+        $sqlB = "$key = '$val'";
+
+        $sql = "delete from $this->table where $sqlB;";
+        echo $sql;
+        return $this->_query($sql);
+    }
 }
-
-$db = new GloriousDB("userinfo");
-$db->setTable("info");
-$db->where([
-    'email' => 'seanchain@outlook.com',
-    'id' => 'csh'
-], "or");
-
-$db->orWhere(['NO' => '1']);
-
-$res = $db->find();
-
-print_r($res[0]);
-
-print_r($db->sql("select * from info"));
-
-$db->destroy();
-
 ?>

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="04be3426-e17f-4ab5-a8a4-82ac4d042143" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/glorious.php" afterPath="$PROJECT_DIR$/glorious.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GloriousDB.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,18 +28,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="glorious.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="glorious.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/glorious.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29850745" vertical-offset="0" max-vertical-offset="3222">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state vertical-scroll-proportion="-9.0" vertical-offset="216" max-vertical-offset="3222">
+              <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
               <folding>
-                <marker date="1429661826000" expanded="true" signature="1924:1962" placeholder="select * fro..." />
-                <marker date="1429661826000" expanded="true" signature="3486:3519" placeholder="select * fro..." />
-                <marker date="1429661826000" expanded="true" signature="3937:3949" placeholder="insert into ..." />
-                <marker date="1429661826000" expanded="true" signature="3937:3966" placeholder="insert into ..." />
-                <marker date="1429661826000" expanded="true" signature="4601:4632" placeholder="delete from ..." />
+                <marker date="1430910378000" expanded="true" signature="1690:1728" placeholder="select * fro..." />
+                <marker date="1430910378000" expanded="true" signature="3252:3285" placeholder="select * fro..." />
+                <marker date="1430910378000" expanded="true" signature="3703:3732" placeholder="insert into ..." />
+                <marker date="1430910378000" expanded="true" signature="4233:4246" placeholder="select * fro..." />
+                <marker date="1430910378000" expanded="true" signature="4233:4247" placeholder="select * fro..." />
+                <marker date="1430910378000" expanded="true" signature="4467:4498" placeholder="delete from ..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.08955224" vertical-offset="0" max-vertical-offset="603">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,6 +64,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/glorious.php" />
+        <option value="$PROJECT_DIR$/test.php" />
       </list>
     </option>
   </component>
@@ -60,8 +73,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="40" />
-    <option name="y" value="23" />
+    <option name="x" value="392" />
+    <option name="y" value="28" />
     <option name="width" value="1200" />
     <option name="height" value="727" />
   </component>
@@ -88,6 +101,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -108,7 +122,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -118,6 +131,9 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="04be3426-e17f-4ab5-a8a4-82ac4d042143" name="Default" comment="" />
@@ -128,7 +144,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="23" width="1200" height="727" extended-state="0" />
+    <frame x="392" y="28" width="1200" height="727" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -143,13 +159,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -177,15 +193,54 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/glorious.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29850745" vertical-offset="0" max-vertical-offset="3222">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3204">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1429661826000" expanded="true" signature="1924:1962" placeholder="select * fro..." />
-            <marker date="1429661826000" expanded="true" signature="3486:3519" placeholder="select * fro..." />
-            <marker date="1429661826000" expanded="true" signature="3937:3949" placeholder="insert into ..." />
-            <marker date="1429661826000" expanded="true" signature="3937:3966" placeholder="insert into ..." />
-            <marker date="1429661826000" expanded="true" signature="4601:4632" placeholder="delete from ..." />
+            <marker date="1430910378000" expanded="true" signature="1690:1728" placeholder="select * fro..." />
+            <marker date="1430910378000" expanded="true" signature="3252:3285" placeholder="select * fro..." />
+            <marker date="1430910378000" expanded="true" signature="3703:3732" placeholder="insert into ..." />
+            <marker date="1430910378000" expanded="true" signature="4233:4246" placeholder="select * fro..." />
+            <marker date="1430910378000" expanded="true" signature="4233:4247" placeholder="select * fro..." />
+            <marker date="1430910378000" expanded="true" signature="4467:4498" placeholder="delete from ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glorious.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3366">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1430910378000" expanded="true" signature="1690:1728" placeholder="select * fro..." />
+            <marker date="1430910378000" expanded="true" signature="3252:3285" placeholder="select * fro..." />
+            <marker date="1430910378000" expanded="true" signature="3703:3732" placeholder="insert into ..." />
+            <marker date="1430910378000" expanded="true" signature="4233:4246" placeholder="select * fro..." />
+            <marker date="1430910378000" expanded="true" signature="4233:4247" placeholder="select * fro..." />
+            <marker date="1430910378000" expanded="true" signature="4467:4498" placeholder="delete from ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glorious.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.0" vertical-offset="216" max-vertical-offset="3222">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding>
+            <marker date="1430910378000" expanded="true" signature="1690:1728" placeholder="select * fro..." />
+            <marker date="1430910378000" expanded="true" signature="3252:3285" placeholder="select * fro..." />
+            <marker date="1430910378000" expanded="true" signature="3703:3732" placeholder="insert into ..." />
+            <marker date="1430910378000" expanded="true" signature="4233:4246" placeholder="select * fro..." />
+            <marker date="1430910378000" expanded="true" signature="4233:4247" placeholder="select * fro..." />
+            <marker date="1430910378000" expanded="true" signature="4467:4498" placeholder="delete from ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08955224" vertical-offset="0" max-vertical-offset="603">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,21 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: seanchain
- * Date: 4/21/15
- * Time: 1:57 PM
- */
 
 class GloriousDB{
     private $db;
     private $state;
     private $table;
     private $find_q = "";
-    private $host = "127.0.0.1"; //Your host here
-    private $username = "root"; //Your username here
-    private $passwd = "********"; //Your password here
-    public function __construct($database){
-        $this->db = new mysqli($this->host, $this->username, $this->passwd, $database);
+    public function __construct($host, $username, $passwd, $database){
+        $this->db = new mysqli($host, $username, $passwd, $database);
         if(mysqli_connect_errno())
         {
             $this->state = false;
@@ -161,8 +152,12 @@ class GloriousDB{
 
         $sqlA = substr($sqlA, 0, strlen($sqlA)-2);
         $sql = "update $this->table set $sqlA where $sqlB;";
-        echo $sql;
         return $this->_query($sql);
+    }
+
+    public function findall() {
+        $q = "select * from $this->table;";
+        return $this->_execute($q);
     }
 
     public function delete($cond){
@@ -171,8 +166,8 @@ class GloriousDB{
         $sqlB = "$key = '$val'";
 
         $sql = "delete from $this->table where $sqlB;";
-        echo $sql;
         return $this->_query($sql);
     }
 }
+
 ?>

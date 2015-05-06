@@ -12,6 +12,7 @@ class GloriousDB{
             $this->state = false;
         }
         $this->state = true;
+        $this->db->query("SET NAMES UTF8");
     }
 
     public function state(){
